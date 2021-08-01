@@ -1,0 +1,29 @@
+.dashboard-nav {
+  margin-left: 10px;
+}
+.nav-height {
+  max-height: 50px;
+}
+.left-aligned {
+  width: 50%;
+  float: left;
+}
+.right-aligned {
+  width: 50%;
+  float: right;
+}
+.chartContainer {
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+}
+.pieChart {
+  height: 15em;
+}
+.groupedColumn {
+  height: 15em;
+}
+.cardBody {
+  padding-top: 5px !important;
+  padding-inline-start: 5px !important;
+}
