@@ -1,0 +1,47 @@
+export function getColDefs(){
+    let colDef=[
+        {
+            field:"Company"
+        },
+        {
+            field:"Country"
+        },
+        {
+            field:"January"
+        },
+        {
+            field:"February"
+        },
+        {
+            field:"March"
+        },
+        {
+            field:"April"
+        },
+        {
+            field:"May"
+        },
+        {
+            field:"June"
+        },
+        {
+            field:"July"
+        },
+        {
+            field:"August"
+        },
+        {
+            field:"September" 
+        },
+        {
+            field:"October"
+        },
+        {
+            field:"November"
+        },
+        {
+            field:"December"
+        }
+    ];
+    return colDef;
+}
