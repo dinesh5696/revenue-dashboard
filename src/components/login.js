@@ -2,6 +2,7 @@ import React,{useRef, useState} from 'react';
 import {Form,Button,Card,Alert,Container} from 'react-bootstrap';
 import { Link,useHistory } from 'react-router-dom';
 import {useAuth} from '../contexts/authContext';
+import GoogleSignin from './googleSignin';
 export default function Login(){
     const emailRef= useRef();
     const passwordRef= useRef();
@@ -40,14 +41,17 @@ export default function Login(){
                     </Form.Group>
                     <Button disabled={loading} className='w-100 mt-2' type='submit'>Log In</Button>
                 </Form>
+                <div className='w-100 text-cener mt-2'>
+                    Create an account? <Link to="signup">Sign Up</Link>
+                </div>
                 <div className='w-100 text-center mt-3'>
                     <Link to="/forgot-password">Forgot Password?</Link>
                 </div>
+                <div className='w-100 text-cener mt-2'>
+                    <GoogleSignin />
+                </div>
             </Card.Body>
         </Card>
-        <div className='w-100 text-cener mt-2'>
-            Create an account? <Link to="signup">Sign Up</Link>
-        </div>
         </div>
       
     </Container>

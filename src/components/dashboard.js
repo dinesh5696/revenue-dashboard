@@ -5,23 +5,7 @@ import {Link, useHistory} from 'react-router-dom';
 import {db} from '../firebase';
 import Grid from './grid';
 import './app.css';
-// const dummyData=[];
 export default function Dashboard(){
-    // const addDocWithId=async(row)=>{
-    //     await db.collection('revenue-data').doc(row.Company).set(row)
-    //     .then(()=>{
-    //         console.log("doc added with ",row.Company);
-    //     })
-    //     .catch((error)=>{
-    //         console.log("error",error);
-    //     })
-    // };
-    // const handleDataUpload=()=>{
-    //     dummyData.forEach(item=>{
-    //         addDocWithId(item);
-    //     })
-    //   }
-    
     const [error,setError]=useState("");
     const {currentUser, logout} = useAuth();
     const history = useHistory();
@@ -61,7 +45,6 @@ export default function Dashboard(){
                         Signed in as :<Link to="/profile" className="btn btn-primary">{currentUser.email}</Link>
                     </Navbar.Text>
                     </Navbar.Collapse>
-                    {/* <Button onClick={handleDataUpload} variant="link" style={{"color":"white"}}>Upload Data</Button> */}
                     <Button onClick={handleLogOut} variant="link" style={{"color":"white"}}>Log Out</Button>
             </Navbar>
             <Card>

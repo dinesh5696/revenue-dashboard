@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- // const addDocWithId=async(row)=>{
+// await db.collection('revenue-data').doc(row.Company).set(row)
+// .then(()=>{
+// console.log("doc added with ",row.Company);
+// })
+// .catch((error)=>{
+// console.log("error",error);
+// })
+// };
+// const handleDataUpload=()=>{
+// dummyData.forEach(item=>{
+// addDocWithId(item);
+// })
+// }
+// const dummyData=[]; -->
+
+<!-- <Button onClick={handleDataUpload} variant="link" style={{"color":"white"}}>Upload Data</Button> -->
